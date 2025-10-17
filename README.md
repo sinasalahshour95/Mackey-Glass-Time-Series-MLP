@@ -19,8 +19,6 @@ where:
 - tₘₐₓ = 1100
 - x(t) is defined for t < 18
 
----
-
 ## Implemented Neural Network Algorithms
 
 All algorithms are implemented **manually in MATLAB**, without using built-in training functions such as `trainlm` or `train`.
@@ -31,4 +29,12 @@ All algorithms are implemented **manually in MATLAB**, without using built-in tr
 | **Emotional Learning** | Incorporates previous error into the weight update using an emotional coefficient. |
 | **Adaptive Learning Rate** | Dynamically adjusts the learning rate during backpropagation. |
 | **Levenberg–Marquardt (LM)** | A second-order optimization method that combines Gauss–Newton and gradient descent techniques. |
+
+## Project Structure
+
+ - Mackey_Glass.m            # Generate the Mackey–Glass time series and initial weights
+ - MLP.m                     # One-hidden-layer MLP (standard backprop)
+ - EMLP.m                    # Neural network with emotional learning
+ - AdaptiveMLP.m             # Adaptive learning rate implementation
+ - Levenberg_Marquardt.m     # Levenberg–Marquardt implementation
 
